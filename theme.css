@@ -40,7 +40,8 @@ code.inline {
 
 .button__74017.button__24af7[aria-label='Send a gift'],
 .iconWrapper__9293f[aria-label='Notification Settings'],
-.iconItem_c69b6d[aria-label='Invite to Channel'] {
+.iconItem_c69b6d[aria-label='Invite to Channel'],
+.anchor_edefb8.anchorUnderlineOnHover_edefb8:has(.button__85643[aria-label='Help']) { 
     display: none !important;
 }
 
