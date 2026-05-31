@@ -19,7 +19,7 @@
   > Discord with shading and subtle glass effects. Compatible with [Equicord](https://equicord.org/).
 
   ```uri
-  https://raw.githubusercontent.com/warriorCavt/discord-aero-theme/refs/heads/main/theme.css
+  https://raw.githubusercontent.com/warriorCavt/EarOnes-Themes/refs/heads/main/theme.css
   
   ```
 
@@ -27,7 +27,7 @@
 
 - Mica for Discord Neumorphic
 
-  > Addon for transparency compatibility, modified version of [PL7963/Discord-Mica](https://www.google.com/search?q=https://github.com/PL7963/Discord-Mica) suited for my purposes.
+  > Addon for transparency compatibility, modified version of [PL7963/Discord-Mica](https://github.com/PL7963/Discord-Mica) suited for my purposes.
 
   <details>
     <summary>Variables customisable in QuickCSS</summary>
@@ -41,7 +41,7 @@
   </details>
   
   ```uri
-  https://raw.githubusercontent.com/warriorCavt/discord-aero-theme/refs/heads/main/mica-support.css
+  https://raw.githubusercontent.com/warriorCavt/EarOnes-Themes/refs/heads/main/mica-support.css
   
   ```
 
@@ -81,7 +81,7 @@
   </details>
   
   ```uri
-  https://raw.githubusercontent.com/warriorCavt/discord-aero-theme/refs/heads/main/privacy.css
+  https://raw.githubusercontent.com/warriorCavt/EarOnes-Themes/refs/heads/main/privacy.css
   
   ```
 
