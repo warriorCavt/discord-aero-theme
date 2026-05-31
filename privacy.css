@@ -7,7 +7,8 @@
 
 /* Override in QuickCSS editor */
 :root {
-    --privacy-hidden-servers: [data-dnd-name="SERVER NAME"], [data-dnd-name="ANOTHER SERVER"];
+    /* List the servers you want to remain blurred even when hovered */
+    --privacy-hidden-servers: :is([data-dnd-name="SERVER NAME"], [data-dnd-name="ANOTHER SERVER"]);
 
     --privacy-blur-amount: 10px;
     --privacy-blur-saturate: 1.2;
@@ -44,7 +45,12 @@
     transition: background-color 0s ease-in-out;
 }
 
-.stack_dbd263[aria-label='Servers'] .listItem__650eb:not(:has(var(--privacy-hidden-servers))) .wrapper__6e9f8:hover .icon__6e9f8 {
+.stack_dbd263[aria-label='Servers'] .listItem__650eb .wrapper__6e9f8:hover .icon__6e9f8 {
     filter: blur(0px);
     transition: filter var(--privacy-duration-blur-leave) var(--privacy-delay-blur-leave) ease-in-out;
+}
+
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:has(var(--privacy-hidden-servers)) .wrapper__6e9f8:hover .icon__6e9f8 {
+    filter: blur(var(--privacy-blur-amount)) saturate(var(--privacy-blur-saturate)) contrast(var(--privacy-blur-contrast)) opacity(var(--privacy-blur-opacity));
+    transition: filter var(--privacy-duration-blur-enter) ease-out;
 }
