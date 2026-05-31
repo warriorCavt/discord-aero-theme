@@ -1,21 +1,35 @@
 
 <h1 align="center">earone's themes</h1>
 
-<h3 align="center">
+<p>This is what I use to make my experience a bit cooler. This repo is work-in-progress, for now it is only my Discord theme in pure CSS, but later I will add plugin configuration. Windhawk mods and their settings coming soon.</p>
+
+<h2 align="center">
   <strong>Discord theme</strong>
-</h3>
+</h2>
 
 ![Screenshot](https://media.pje.ovh/unlisted/discord-aero-theme-showcase1.png)
 
-> [!NOTE]
+---
+
+<h4><strong>Prerequisites</strong></h4>
+
+> [!WARNING]
+> The following Discord themes are not guaranteed to work. <strong>Make sure you have the latest version of [Equicord](https://equicord.org/) installed. I'm not planning to make it compatible with other clients.</strong><br/>You can fork or copy all you want, but if the issue exists only outside Equicord, expect that it will be marked as wontfix.
+
+> [!IMPORTANT]
 > <img width="254" height="122" alt="image" src="https://github.com/user-attachments/assets/a75e5401-51eb-4c66-a9a8-0a1da1e1ad30" align="right" />
 > Discord Neumorphic is made for the Onyx theme.<br/><br/>
 > Set it in your Discord settings:<br/>
 > `User Settings → Appearance → Themes → Default Themes → select Onyx`
 
-### Themes & Addons
+> [!NOTE]
+> <img width="270" height="92" alt="image" src="https://github.com/user-attachments/assets/d14c4c0d-00c0-41dd-ae8d-19de33746af8" align="right"/>
+> In order for transparency to work, you need to set the Background Material.<br/>
+> `User Settings → Equicord → Background Material → select something`
 
-- Discord Neumorphic
+---
+
+- **Discord Neumorphic**
   > Discord with shading and subtle glass effects. Compatible with [Equicord](https://equicord.org/).
 
   ```uri
@@ -23,11 +37,9 @@
   
   ```
 
----
+- **Mica for Discord Neumorphic**
 
-- Mica for Discord Neumorphic
-
-  > Addon for transparency compatibility, modified version of [PL7963/Discord-Mica](https://github.com/PL7963/Discord-Mica) suited for my purposes.
+  > Addon for transparency compatibility, modified version of [PL7963/Discord-Mica](https://github.com/PL7963/Discord-Mica) suited for my purposes.  
 
   <details>
     <summary>Variables customisable in QuickCSS</summary>
@@ -45,9 +57,7 @@
   
   ```
 
----
-
-- Blur Stuff for Privacy
+- **Blur Stuff for Privacy**
 
   > Blurs other server icons until hovered, to protect you from accidentally leaking where you're lurking.
   
