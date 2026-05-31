@@ -2,14 +2,20 @@
  * @name Blur Stuff for Privacy
  * @author pje.ovh
  * @version 1.0
- * @description Blurs other server icons to protect you from accidentally leaking where you're lurking
+ * @description Blurs other server icons to protect you from accidentally leaking where you're lurking. View source to acquaint with more features.
  */
+
+
+/* Target the specific servers you want to remain blurred here, copy this to your QuickCSS and change server names */
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:is(
+    [data-dnd-name="SERVER NAME"], 
+    [data-dnd-name="ANOTHER SERVER"]
+) {
+    --privacy-is-hidden: true;
+}
 
 /* Override in QuickCSS editor */
 :root {
-    /* List the servers you want to remain blurred even when hovered */
-    --privacy-hidden-servers: :is([data-dnd-name="SERVER NAME"], [data-dnd-name="ANOTHER SERVER"]);
-
     --privacy-blur-amount: 10px;
     --privacy-blur-saturate: 1.2;
     --privacy-blur-contrast: 1.4;
@@ -50,7 +56,13 @@
     transition: filter var(--privacy-duration-blur-leave) var(--privacy-delay-blur-leave) ease-in-out;
 }
 
-.stack_dbd263[aria-label='Servers'] .listItem__650eb:has(var(--privacy-hidden-servers)) .wrapper__6e9f8:hover .icon__6e9f8 {
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:has([style*="--privacy-is-hidden"]) .wrapper__6e9f8:hover .icon__6e9f8,
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:has(> div[style*="--privacy-is-hidden"]) .wrapper__6e9f8:hover .icon__6e9f8 {
+    filter: blur(var(--privacy-blur-amount)) saturate(var(--privacy-blur-saturate)) contrast(var(--privacy-blur-contrast)) opacity(var(--privacy-blur-opacity));
+    transition: filter var(--privacy-duration-blur-enter) ease-out;
+}
+
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:has([data-dnd-name="SERVER NAME"], [data-dnd-name="ANOTHER SERVER"]) .wrapper__6e9f8:hover .icon__6e9f8 {
     filter: blur(var(--privacy-blur-amount)) saturate(var(--privacy-blur-saturate)) contrast(var(--privacy-blur-contrast)) opacity(var(--privacy-blur-opacity));
     transition: filter var(--privacy-duration-blur-enter) ease-out;
 }
