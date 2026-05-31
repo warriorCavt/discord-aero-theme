@@ -1,0 +1,51 @@
+/**
+ * @name Blur Stuff for Privacy
+ * @author pje.ovh
+ * @version 1.0
+ * @description Blurs other server icons to protect you from accidentally leaking where you're lurking
+ */
+
+/* Override in QuickCSS editor */
+:root {
+    --enable-blur: initial; /* Set to ' ' to turn the feature OFF. Keep as initial to have it ON. */
+    --hidden-servers: [data-dnd-name="SERVER NAME"], [data-dnd-name="ANOTHER SERVER"];
+
+    --blur-amount: 10px;
+    --blur-saturate: 1.2;
+    --blur-contrast: 1.4;
+    --blur-opacity: 0.9;
+    --blur-bg-color: #777;
+
+    --duration-blur-enter: 60s;
+    --duration-blur-leave: 0.2s;
+    --delay-blur-leave: 0.05s;
+    --duration-bg-enter: 10s;
+}
+
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:not(:has(.selected_e5445c)) .icon__6e9f8 {
+    filter: var(--enable-blur, blur(var(--blur-amount)) saturate(var(--blur-saturate)) contrast(var(--blur-contrast)) opacity(var(--blur-opacity)));
+    transition: filter var(--duration-blur-enter) ease-out;
+}
+
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:not(:has(.selected_e5445c)) .wrapper__6e9f8:not(:hover, :has(.acronym__6e9f8)) {
+    --cmargin: 8px;
+    margin: var(--enable-blur, var(--cmargin));
+    width: var(--enable-blur, auto);
+    height: var(--enable-blur, auto);
+    background-color: var(--enable-blur, var(--blur-bg-color));
+    border-radius: var(--enable-blur, 4px);
+    transition: background-color var(--duration-bg-enter) ease-out;
+    img {
+        margin: var(--enable-blur, calc(var(--cmargin) * -1));
+    }
+}
+
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:not(:has(.selected_e5445c)) .wrapper__6e9f8:not(:has(.acronym__6e9f8)):hover {
+    background-color: var(--enable-blur, transparent);
+    transition: background-color 0s ease-in-out;
+}
+
+.stack_dbd263[aria-label='Servers'] .listItem__650eb:not(:has(var(--hidden-servers))) .wrapper__6e9f8:hover .icon__6e9f8 {
+    filter: var(--enable-blur, blur(0px));
+    transition: filter var(--duration-blur-leave) var(--delay-blur-leave) ease-in-out;
+}
