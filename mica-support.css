@@ -8,6 +8,8 @@
 
 :root {
   /*Dark mode*/
+  --mica-tint-background-color: #0001; /* only thing you shall be interested in, for DWMBlurGlass aero I recommend #0003 */
+  
   --dark-bg: #0000;
   --dark-layer1: 20,20,20;
   --dark-flyout: rgba(30,30,30);
@@ -139,8 +141,8 @@
 .chatGradient__36d07, .chatTypingGradientNotAtBottom__36d07, .chatTypingGradientAtBottom__36d07 /* Chatbox gradient */,
 .container__7641b /* Thread member list */,
 .channelChatWrapper_cb9592, .wrapper_cb9592 /* Voice Chat message panel */ {
-  background-color: #0003 !important;
-  background: #0003 !important;
+  background-color: var(--mica-tint-background-color) !important;
+  background: var(--mica-tint-background-color) !important;
 }
 
 .wrapper_ef3116, .content__5e434, .sidebar__5e434  /*Server Sidebar*/ {
