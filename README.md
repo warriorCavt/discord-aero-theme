@@ -19,7 +19,7 @@
   > Discord with shading and subtle glass effects. Compatible with [Equicord](https://equicord.org/).
 
   ```uri
-  https://raw.githubusercontent.com/warriorCavt/EarOnes-Themes/refs/heads/main/theme.css
+  https://raw.githubusercontent.com/ear1blue/EarOnes-Themes/refs/heads/main/theme.css
   
   ```
 
@@ -41,7 +41,7 @@
   </details>
   
   ```uri
-  https://raw.githubusercontent.com/warriorCavt/EarOnes-Themes/refs/heads/main/mica-support.css
+  https://raw.githubusercontent.com/ear1blue/EarOnes-Themes/refs/heads/main/mica-support.css
   
   ```
 
@@ -81,7 +81,7 @@
   </details>
   
   ```uri
-  https://raw.githubusercontent.com/warriorCavt/EarOnes-Themes/refs/heads/main/privacy.css
+  https://raw.githubusercontent.com/ear1blue/EarOnes-Themes/refs/heads/main/privacy.css
   
   ```
 
