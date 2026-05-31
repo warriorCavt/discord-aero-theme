@@ -704,6 +704,101 @@ p[style="margin: 0px; font-family: var(--font-code);"]::before {
     width: 16px;
 }
 
+
+.vc-shc-channel-list-icon {
+    filter: saturate(0) opacity(0.5);
+    transform: scale(0.8);
+}
+
+div#vc-spotify-progress-bar .container__5a838 {
+    display: none;
+}
+
+.vc-whos-watching-spectating-header {
+    display: none;
+}
+
+.vc-spotify-progress-time {
+    margin-top: 4px;
+    font-weight: 300;
+    font-family: cursive;
+    opacity: 0.5;
+}
+
+.vc-whos-watching-spectating-panel {
+    margin-top: -14px;
+    margin-left: 128px;
+    margin-right: 48px;
+
+    .size24__183c2, .avatarContainer__183c2, .clickableAvatar__183c2 {
+        width: 16px !important;
+        height: 16px !important;
+    }
+}
+
+.vc-spotify-lyrics {
+    .vc-text-base.vc-spotify-lyrics-prev {
+        opacity: 0.5;
+        font-weight: 100;
+    }
+    .vc-spotify-lyrics-next {
+        opacity: 0.5;
+        font-weight: 100;
+    }
+    .vc-spotify-lyrics-music-note {
+        animation: none;
+    }
+}
+
+
+.vc-channeltabs-tab-container, .vc-channeltabs-container {
+    padding-left: 0 !important;
+}
+
+.vc-channeltabs-tab-container {
+    -webkit-app-region: drag;
+}
+
+.vc-channeltabs-container {
+    margin-top: -32px;
+    margin-right: 256px;
+    background-color: transparent !important;
+    overflow-x: visible;
+}
+
+.vc-channeltabs-tab {
+    margin: 0 8px 0px 0;
+    --tab-height-scale: 0.8; 
+}
+
+.vc-channeltabs-tab-inner {
+    padding: 0;
+}
+
+.vc-channeltabs-button {
+    padding: 0 2px 0 0;
+}
+
+.container__2637a, .container_f37cb1.hasBanner_f37cb1, .header_f37cb1 {
+    border-start-start-radius: var(--radius-md);
+}
+
+.base__5e434:has(.vc-channeltabs-container) .title_c38106 {
+    justify-content: flex-end;
+    margin-top: var(--custom-app-top-bar-height);
+    padding: 8px 11px;
+    opacity: 0.5;
+    display: flex;
+    .icon_f34534, svg {
+        order: 2;
+    }
+}
+
+.searchBar_e6b769 {
+    margin-top: 2px;
+}
+
+
 /*
 .winButtons_c38106, .leading_c38106 {
     margin: 8px 8px 4px 0px;
